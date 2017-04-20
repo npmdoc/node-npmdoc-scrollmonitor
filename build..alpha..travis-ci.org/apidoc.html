@@ -49,8 +49,6 @@
 <h1>api documentation for
     <a
 
-        href="https://github.com/stutrek/scrollMonitor#readme"
-
     >scrollmonitor (v1.2.3)</a>
 </h1>
 <h4>A simple and fast API to monitor DOM elements as you scroll</h4>
@@ -147,12 +145,6 @@
 
         <li>
 
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">scrollmonitor.</span>scrollMonitor</span>
-
-        </li>
-
-        <li>
-
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">scrollmonitor.</span>watcher.prototype</span>
 
         </li>
@@ -160,91 +152,6 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">scrollmonitor.</span>watchers</span>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.scrollmonitor.scrollMonitor">module scrollmonitor.scrollMonitor</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.scrollmonitor.scrollMonitor.DOMListener">
-            function <span class="apidocSignatureSpan">scrollmonitor.scrollMonitor.</span>DOMListener
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.scrollmonitor.scrollMonitor.recalculateLocations">
-            function <span class="apidocSignatureSpan">scrollmonitor.scrollMonitor.</span>recalculateLocations
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.scrollmonitor.scrollMonitor.update">
-            function <span class="apidocSignatureSpan">scrollmonitor.scrollMonitor.</span>update
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">scrollmonitor.scrollMonitor.</span>contentHeight</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">scrollmonitor.scrollMonitor.</span>documentHeight</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">scrollmonitor.scrollMonitor.</span>viewportBottom</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">scrollmonitor.scrollMonitor.</span>viewportHeight</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">scrollmonitor.scrollMonitor.</span>viewportTop</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">scrollmonitor.scrollMonitor.</span>eventTypes</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">scrollmonitor.scrollMonitor.</span>item</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">scrollmonitor.scrollMonitor.</span>latestEvent</span>
-
-        </li>
-
-        <li>
-
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">scrollmonitor.scrollMonitor.</span>watchers</span>
 
         </li>
 
@@ -646,106 +553,6 @@
 
 
 
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.scrollmonitor.scrollMonitor" id="apidoc.module.scrollmonitor.scrollMonitor">module scrollmonitor.scrollMonitor</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.scrollmonitor.scrollMonitor.DOMListener" id="apidoc.element.scrollmonitor.scrollMonitor.DOMListener">
-        function <span class="apidocSignatureSpan">scrollmonitor.scrollMonitor.</span>DOMListener
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">DOMListener = function (){t.prototype.DOMListener.apply(a,arguments)}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.scrollmonitor.scrollMonitor.recalculateLocations" id="apidoc.element.scrollmonitor.scrollMonitor.recalculateLocations">
-        function <span class="apidocSignatureSpan">scrollmonitor.scrollMonitor.</span>recalculateLocations
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">recalculateLocations = function (){this.documentHeight=0,this.update()}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-## scrollMonitor Module
-
-### Methods
-* `scrollMonitor.createContainer( containerEl )` - returns a new ScrollMonitorContainer that can be used just like the scrollMonitor
- module.
-* `scrollMonitor.create( watchItem, offsets )` - Returns a new watcher. `watchItem` is a DOM element, jQuery object, NodeList, CSS
- selector, object with .top and .bottom, or a number.
-* `scrollMonitor.update()` - update and trigger all watchers.
-* `scrollMonitor.<span class="apidocCodeKeywordSpan">recalculateLocations</span>()` - recalculate the location of all unlocked watchers
- and trigger if needed.
-
-### Properties
-* `scrollMonitor.viewportTop` - distance from the top of the document to the top of the viewport.
-* `scrollMonitor.viewportBottom` - distance from the top of the document to the bottom of the viewport.
-* `scrollMonitor.viewportHeight` - height of the viewport.
-* `scrollMonitor.documentHeight` - height of the document.
-...</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.scrollmonitor.scrollMonitor.update" id="apidoc.element.scrollmonitor.scrollMonitor.update">
-        function <span class="apidocSignatureSpan">scrollmonitor.scrollMonitor.</span>update
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">update = function (){h(),c()}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
- ```
-
-## scrollMonitor Module
-
-### Methods
-* `scrollMonitor.createContainer( containerEl )` - returns a new ScrollMonitorContainer that can be used just like the scrollMonitor
- module.
-* `scrollMonitor.create( watchItem, offsets )` - Returns a new watcher. `watchItem` is a DOM element, jQuery object, NodeList, CSS
- selector, object with .top and .bottom, or a number.
-* `scrollMonitor.<span class="apidocCodeKeywordSpan">update</span>()` - update and trigger all watchers.
-* `scrollMonitor.recalculateLocations()` - recalculate the location of all unlocked watchers and trigger if needed.
-
-### Properties
-* `scrollMonitor.viewportTop` - distance from the top of the document to the top of the viewport.
-* `scrollMonitor.viewportBottom` - distance from the top of the document to the bottom of the viewport.
-* `scrollMonitor.viewportHeight` - height of the viewport.
-* `scrollMonitor.documentHeight` - height of the document.
-...</pre></li>
-    </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
 
 <div class="apidocSectionDiv">
@@ -917,88 +724,21 @@
 		}
 	}</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-
-
-
-
-
-
-
-!function(t,e){&#x22;object&#x22;==typeof exports&#x26;&#x26;&#x22;object&#x22;==typeof module?module.exports=e():&#x22;function
-&#x22;==typeof define&#x26;&#x26;define.amd?define(&#x22;scrollMonitor&#x22;,[],e):&#x22;object&#x22;==typeof exports?exports.scrollMonitor
-=e():t.scrollMonitor=e()}(this,function(){return function(t){function e(o){if(i[o])return i[o].exports;var s=i[o]={exports:{},id
-:o,loaded:!1};return t[o].call(s.exports,s,s.exports,e),s.loaded=!0,s.exports}var i={};return e.m=t,e.c=i,e.p=&#x22;&#x22;,e(0)}([
-function(t,e,i){&#x22;use strict&#x22;;var o=i(1),s=o.isInBrowser,n=i(2),r=new n(s?document.body:null);r.setStateFromDOM(null),r
-.listenToDOM(),s&#x26;&#x26;(window.scrollMonitor=r),t.exports=r},function(t,e){&#x22;use strict&#x22;;e.VISIBILITYCHANGE=&#x22;
-visibilityChange&#x22;,e.ENTERVIEWPORT=&#x22;enterViewport&#x22;,e.FULLYENTERVIEWPORT=&#x22;fullyEnterViewport&#x22;,e.EXITVIEWPORT
-=&#x22;exitViewport&#x22;,e.PARTIALLYEXITVIEWPORT=&#x22;partiallyExitViewport&#x22;,e.LOCATIONCHANGE=&#x22;locationChange&#x22;,
-e.STATECHANGE=&#x22;stateChange&#x22;,e.eventTypes=[e.VISIBILITYCHANGE,e.ENTERVIEWPORT,e.FULLYENTERVIEWPORT,e.EXITVIEWPORT,e.PARTIALLYEXITVIEWPORT
-,e.LOCATIONCHANGE,e.STATECHANGE],e.isOnServer=&#x22;undefined&#x22;==typeof window,e.isInBrowser=!e.isOnServer,e.defaultOffsets={
-top:0,bottom:0}},function(t,e,i){&#x22;use strict&#x22;;function o(t,e){if(!(t instanceof e))throw new TypeError(&#x22;Cannot call
- a class as a function&#x22;)}function s(t){return c?0:t===document.body?window.innerHeight||document.documentElement.clientHeight
-:t.clientHeight}function n(t){return c?0:t===document.body?Math.max(document.body.scrollHeight,document.documentElement.scrollHeight
-,document.body.offsetHeight,document.documentElement.offsetHeight,document.documentElement.clientHeight):t.scrollHeight}function
- r(t){return c?0:t===document.body?window.pageYOffset||document.documentElement&#x26;&#x26;document.documentElement.scrollTop||document
-.body.scrollTop:t.scrollTop}var h=i(1),c=h.isOnServer,a=h.isInBrowser,l=h.eventTypes,p=i(3),w=function(){function t(e,i){function
- h(){if(a.viewportTop=r(e),a.viewportBottom=a.viewportTop+a.viewportHeight,a.documentHeight=n(e),a.documentHeight!==p){for(w=a.watchers
-.length;w--;)a.watchers[w].recalculateLocation();p=a.documentHeight}}function c(){for(u=a.watchers.length;u--;)a.watchers[u].update
-();for(u=a.watchers.length;u--;)a.watchers[u].triggerCallbacks()}o(this,t);var a=this;this.item=e,this.watchers=[],this.viewportTop
-=null,this.viewportBottom=null,this.documentHeight=n(e),this.viewportHeight=s(e),this.DOMListener=function(){t.prototype.DOMListener
-.apply(a,arguments)},this.eventTypes=l,i&#x26;&#x26;(this.containerWatcher=i.create(e));var p,w,u;this.update=function(){h(),c()},
-this.recalculateLocations=function(){this.documentHeight=0,this.update()}}return t.prototype.listenToDOM=function(){a&#x26;&#x26
-;(window.addEventListener?(this.item===document.body?window.addEventListener(&#x22;scroll&#x22;,this.DOMListener):this.item.addEventListener
-(&#x22;scroll&#x22;,this.DOMListener),window.addEventListener(&#x22;resize&#x22;,this.DOMListener)):(this.item===document.body?window
-.attachEvent(&#x22;onscroll&#x22;,this.DOMListener):this.item.attachEvent(&#x22;onscroll&#x22;,this.DOMListener),window.attachEvent
-(&#x22;onresize&#x22;,this.DOMListener)),this.destroy=function(){window.addEventListener?(this.item===document.body?(window.removeEventListener
-(&#x22;scroll&#x22;,this.DOMListener),this.containerWatcher.<span class="apidocCodeKeywordSpan">destroy</span>()):this.item.removeEventListener
-(&#x22;scroll&#x22;,this.DOMListener),window.removeEventListener(&#x22;resize&#x22;,this.DOMListener)):(this.item===document.body
-?(window.detachEvent(&#x22;onscroll&#x22;,this.DOMListener),this.containerWatcher.destroy()):this.item.detachEvent(&#x22;onscroll
-&#x22;,this.DOMListener),window.detachEvent(&#x22;onresize&#x22;,this.DOMListener))})},t.prototype.destroy=function(){},t.prototype
-.DOMListener=function(t){this.setStateFromDOM(t)},t.prototype.setStateFromDOM=function(t){var e=r(this.item),i=s(this.item),o=n(
-this.item);this.setState(e,i,o,t)},t.prototype.setState=function(t,e,i,o){var s=e!==this.viewportHeight||i!==this.contentHeight;
-if(this.latestEvent=o,this.viewportTop=t,this.viewportHeight=e,this.viewportBottom=t+e,this.contentHeight=i,s)for(var n=this.watchers
-.length;n--;)this.watchers[n].recalculateLocation();this.updateAndTriggerWatchers(o)},t.prototype.updateAndTriggerWatchers=function
-(t){for(var e=this.watchers.length;e--;)this.watchers[e].update();for(e=this.watchers.length;e--;)this.watchers[e].triggerCallbacks
-(t)},t.prototype.createCustomContainer=function(){return new t},t.prototype.createContainer=function(e){&#x22;string&#x22;==typeof
- e?e=document.querySelector(e):e&#x26;&#x26;e.length&#x3e;0&#x26;&#x26;(e=e[0]);var i=new t(e,this);return i.setStateFromDOM(),i
-.listenToDOM(),i},t.prototype.create=function(t,e){&#x22;string&#x22;==typeof t?t=document.querySelector(t):t&#x26;&#x26;t.length
-&#x3e;0&#x26;&#x26;(t=t[0]);var i=new p(this,t,e);return this.watchers.push(i),i},t.prototype.beget=function(t,e){return this.create
-(t,e)},t}();t.exports=w},function(t,e,i){&#x22;use strict&#x22;;function o(t,e,i){function o(t,e){if(0!==t.length)for(E=t.length
-;E--;)T=t[E],T.callback.call(s,e,s),T.isOne&#x26;&#x26;t.splice(E,1)}var s=this;this.watchItem=e,this.container=t,i?i===+i?this.
-offsets={top:i,bottom:i}:this.offsets={top:i.top||u.top,bottom:i.bottom||u.bottom}:this.offsets=u,this.callbacks={};for(var d=0,
-f=w.length;d&#x3c;f;d++)s.callbacks[w[d]]=[];this.locked=!1;var m,v,b,I,E,T;this.triggerCallbacks=function(t){switch(this.isInViewport
-&#x26;&#x26;!m&#x26;&#x26;o(this.callbacks[r],t),this.isFullyInViewport&#x26;&#x26;!v&#x26;&#x26;o(this.callbacks[h],t),this.isAboveViewport
-!==b&#x26;&#x26;this.isBelowViewport!==I&#x26;&#x26;(o(this.callbacks[n],t),v||this.isFullyInViewport||(o(this.callbacks[h],t),o
-(this.callbacks[a],t)),m||this.isInViewport||(o(this.callbacks[r],t),o(this.callbacks[c],t))),!this.isFullyInViewport&#x26;&#x26
-;v&#x26;&#x26;o(this.callbacks[a],t),!this.isInViewport&#x26;&#x26;m&#x26;&#x26;o(this.callbacks[c],t),this.isInViewport!==m&#x26
-;&#x26;o(this.callbacks[n],t),!0){case m!==this.isInViewport:case v!==this.isFullyInViewport:case b!==this.isAboveViewport:case
-I!==this.isBelowViewport:o(this.callbacks[p],t)}m=this.isInViewport,v=this.isFullyInViewport,b=this.isAboveViewport,I=this.isBelowViewport
-},this.recalculateLocation=function(){if(!this.locked){var t=this.top,e=this.bottom;if(this.watchItem.nodeName){var i=this.watchItem
-.style.display;&#x22;none&#x22;===i&#x26;&#x26;(this.watchItem.style.display=&#x22;&#x22;);for(var s=0,n=this.container;n.containerWatcher
-;)s+=n.containerWatcher.top-n.containerWatcher.container.viewportTop,n=n.containerWatcher.container;var r=this.watchItem.getBoundingClientRect
-();this.top=r.top+this.container.viewportTop-s,this.bottom=r.bottom+this.container.viewportTop-s,&#x22;none&#x22;===i&#x26;&#x26
-;(this.watchItem.style.display=i)}else this.watchItem===+this.watchItem?this.watchItem&#x3e;0?this.top=this.bottom=this.watchItem
-:this.top=this.bottom=this.container.documentHeight-this.watchItem:(this.top=this.watchItem.top,this.bottom=this.watchItem.bottom
-);this.top-=this.offsets.top,this.bottom+=this.offsets.bottom,this.height=this.bottom-this.top,void 0===t&#x26;&#x26;void 0===e||
-this.top===t&#x26;&#x26;this.bottom===e||o(this.callbacks[l],null)}},this.recalculateLocation(),this.update(),m=this.isInViewport
-,v=this.isFullyInViewport,b=this.isAboveViewport,I=this.isBelowViewport}var s=i(1),n=s.VISIBILITYCHANGE,r=s.ENTERVIEWPORT,h=s.FULLYENTERVIEWPORT
-,c=s.EXITVIEWPORT,a=s.PARTIALLYEXITVIEWPORT,l=s.LOCATIONCHANGE,p=s.STATECHANGE,w=s.eventTypes,u=s.defaultOffsets;o.prototype={on
-:function(t,e,i){switch(!0){case t===n&#x26;&#x26;!this.isInViewport&#x26;&#x26;this.isAboveViewport:case t===r&#x26;&#x26;this.
-isInViewport:case t===h&#x26;&#x26;this.isFullyInViewport:case t===c&#x26;&#x26;this.isAboveViewport&#x26;&#x26;!this.isInViewport
-:case t===a&#x26;&#x26;this.isInViewport&#x26;&#x26;this.isAboveViewport:if(e.call(this,this.container.latestEvent,this),i)return
-}if(!this.callbacks[t])throw new Error(&#x22;Tried to add a scroll monitor listener of type &#x22;+t+&#x22;. Your options are: &#
-x22;+w.join(&#x22;, &#x22;));this.callbacks[t].push({callback:e,isOne:i||!1})},off:function(t,e){if(!this.callbacks[t])throw new
- Error(&#x22;Tried to remove a scroll monitor listener of type &#x22;+t+&#x22;. Your options are: &#x22;+w.join(&#x22;, &#x22;));
-for(var i,o=0;i=this.callbacks[t][o];o++)if(i.callback===e){this.callbacks[t].splice(o,1);break}},one:function(t,e){this.on(t,e,!
-0)},recalculateSize:function(){this.height=this.watchItem.offsetHeight+this.offsets.top+this.offsets.bottom,this.bottom=this.top
-+this.height},update:function(){this.isAboveViewport=this.top&#x3c;this.container.viewportTop,this.isBelowViewport=this.bottom&#
-x3e;this.container.viewportBottom,this.isInViewport=this.top&#x3c;this.container.viewportBottom&#x26;&#x26;this.bottom&#x3e;this
-.container.viewportTop,this.isFullyInViewport=this.top&#x3e;=this.container.viewportTop&#x26;&#x26;this.bottom&#x3c;=this.container
-.viewportBottom||this.isAboveViewport&#x26;&#x26;this.isBelowViewport},destroy:function(){var t=this.container.watchers.indexOf(
-this),e=this;this.container.watchers.splice(t,1);for(var i=0,o=w.length;i&#x3c;o;i++)e.callbacks[w[i]].length=0},lock:function(){
-this.locked=!0},unlock:function(){this.locked=!1}};for(var d=function(t){return function(e,i){this.on.call(this,t,e,i)}},f=0,m=w
-.length;f&#x3c;m;f++){var v=w[f];o.prototype[v]=d(v)}t.exports=o}])});
-//# sourceMappingURL=scrollMonitor.js.map
+				}
+				window.attachEvent(&#x27;onresize&#x27;, this.DOMListener);
+			}
+			this.destroy = function () {
+				if (window.addEventListener) {
+					if (this.item === document.body) {
+						window.removeEventListener(&#x27;scroll&#x27;, this.DOMListener);
+						this.containerWatcher.<span class="apidocCodeKeywordSpan">destroy</span>();
+					} else {
+						this.item.removeEventListener(&#x27;scroll&#x27;, this.DOMListener);
+					}
+					window.removeEventListener(&#x27;resize&#x27;, this.DOMListener);
+				} else {
+					// Old IE support
+					if (this.item === document.body) {
 ...</pre></li>
     </ul>
 
@@ -1182,88 +922,22 @@ watcher.enterViewport(function() {
 		}
 	}</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-
-
-
-
-
-
-
-!function(t,e){&#x22;object&#x22;==typeof exports&#x26;&#x26;&#x22;object&#x22;==typeof module?module.exports=e():&#x22;function
-&#x22;==typeof define&#x26;&#x26;define.amd?define(&#x22;scrollMonitor&#x22;,[],e):&#x22;object&#x22;==typeof exports?exports.scrollMonitor
-=e():t.scrollMonitor=e()}(this,function(){return function(t){function e(o){if(i[o])return i[o].exports;var s=i[o]={exports:{},id
-:o,loaded:!1};return t[o].call(s.exports,s,s.exports,e),s.loaded=!0,s.exports}var i={};return e.m=t,e.c=i,e.p=&#x22;&#x22;,e(0)}([
-function(t,e,i){&#x22;use strict&#x22;;var o=i(1),s=o.isInBrowser,n=i(2),r=new n(s?document.body:null);r.setStateFromDOM(null),r
-.listenToDOM(),s&#x26;&#x26;(window.scrollMonitor=r),t.exports=r},function(t,e){&#x22;use strict&#x22;;e.VISIBILITYCHANGE=&#x22;
-visibilityChange&#x22;,e.ENTERVIEWPORT=&#x22;enterViewport&#x22;,e.FULLYENTERVIEWPORT=&#x22;fullyEnterViewport&#x22;,e.EXITVIEWPORT
-=&#x22;exitViewport&#x22;,e.PARTIALLYEXITVIEWPORT=&#x22;partiallyExitViewport&#x22;,e.LOCATIONCHANGE=&#x22;locationChange&#x22;,
-e.STATECHANGE=&#x22;stateChange&#x22;,e.eventTypes=[e.VISIBILITYCHANGE,e.ENTERVIEWPORT,e.FULLYENTERVIEWPORT,e.EXITVIEWPORT,e.PARTIALLYEXITVIEWPORT
-,e.LOCATIONCHANGE,e.STATECHANGE],e.isOnServer=&#x22;undefined&#x22;==typeof window,e.isInBrowser=!e.isOnServer,e.defaultOffsets={
-top:0,bottom:0}},function(t,e,i){&#x22;use strict&#x22;;function o(t,e){if(!(t instanceof e))throw new TypeError(&#x22;Cannot call
- a class as a function&#x22;)}function s(t){return c?0:t===document.body?window.innerHeight||document.documentElement.clientHeight
-:t.clientHeight}function n(t){return c?0:t===document.body?Math.max(document.body.scrollHeight,document.documentElement.scrollHeight
-,document.body.offsetHeight,document.documentElement.offsetHeight,document.documentElement.clientHeight):t.scrollHeight}function
- r(t){return c?0:t===document.body?window.pageYOffset||document.documentElement&#x26;&#x26;document.documentElement.scrollTop||document
-.body.scrollTop:t.scrollTop}var h=i(1),c=h.isOnServer,a=h.isInBrowser,l=h.eventTypes,p=i(3),w=function(){function t(e,i){function
- h(){if(a.viewportTop=r(e),a.viewportBottom=a.viewportTop+a.viewportHeight,a.documentHeight=n(e),a.documentHeight!==p){for(w=a.watchers
-.length;w--;)a.watchers[w].recalculateLocation();p=a.documentHeight}}function c(){for(u=a.watchers.length;u--;)a.watchers[u].update
-();for(u=a.watchers.length;u--;)a.watchers[u].triggerCallbacks()}o(this,t);var a=this;this.item=e,this.watchers=[],this.viewportTop
-=null,this.viewportBottom=null,this.documentHeight=n(e),this.viewportHeight=s(e),this.DOMListener=function(){t.prototype.DOMListener
-.apply(a,arguments)},this.eventTypes=l,i&#x26;&#x26;(this.containerWatcher=i.create(e));var p,w,u;this.update=function(){h(),c()},
-this.recalculateLocations=function(){this.documentHeight=0,this.update()}}return t.prototype.listenToDOM=function(){a&#x26;&#x26
-;(window.addEventListener?(this.item===document.body?window.addEventListener(&#x22;scroll&#x22;,this.DOMListener):this.item.addEventListener
-(&#x22;scroll&#x22;,this.DOMListener),window.addEventListener(&#x22;resize&#x22;,this.DOMListener)):(this.item===document.body?window
-.attachEvent(&#x22;onscroll&#x22;,this.DOMListener):this.item.attachEvent(&#x22;onscroll&#x22;,this.DOMListener),window.attachEvent
-(&#x22;onresize&#x22;,this.DOMListener)),this.destroy=function(){window.addEventListener?(this.item===document.body?(window.removeEventListener
-(&#x22;scroll&#x22;,this.DOMListener),this.containerWatcher.destroy()):this.item.removeEventListener(&#x22;scroll&#x22;,this.DOMListener
-),window.removeEventListener(&#x22;resize&#x22;,this.DOMListener)):(this.item===document.body?(window.detachEvent(&#x22;onscroll
-&#x22;,this.DOMListener),this.containerWatcher.destroy()):this.item.detachEvent(&#x22;onscroll&#x22;,this.DOMListener),window.detachEvent
-(&#x22;onresize&#x22;,this.DOMListener))})},t.prototype.destroy=function(){},t.prototype.DOMListener=function(t){this.setStateFromDOM
-(t)},t.prototype.setStateFromDOM=function(t){var e=r(this.item),i=s(this.item),o=n(this.item);this.setState(e,i,o,t)},t.prototype
-.setState=function(t,e,i,o){var s=e!==this.viewportHeight||i!==this.contentHeight;if(this.latestEvent=o,this.viewportTop=t,this.
-viewportHeight=e,this.viewportBottom=t+e,this.contentHeight=i,s)for(var n=this.watchers.length;n--;)this.watchers[n].recalculateLocation
-();this.updateAndTriggerWatchers(o)},t.prototype.updateAndTriggerWatchers=function(t){for(var e=this.watchers.length;e--;)this.watchers
-[e].update();for(e=this.watchers.length;e--;)this.watchers[e].triggerCallbacks(t)},t.prototype.createCustomContainer=function(){
-return new t},t.prototype.createContainer=function(e){&#x22;string&#x22;==typeof e?e=document.querySelector(e):e&#x26;&#x26;e.length
-&#x3e;0&#x26;&#x26;(e=e[0]);var i=new t(e,this);return i.setStateFromDOM(),i.listenToDOM(),i},t.prototype.create=function(t,e){&#
-x22;string&#x22;==typeof t?t=document.querySelector(t):t&#x26;&#x26;t.length&#x3e;0&#x26;&#x26;(t=t[0]);var i=new p(this,t,e);return
- this.watchers.push(i),i},t.prototype.beget=function(t,e){return this.create(t,e)},t}();t.exports=w},function(t,e,i){&#x22;use strict
-&#x22;;function o(t,e,i){function o(t,e){if(0!==t.length)for(E=t.length;E--;)T=t[E],T.callback.call(s,e,s),T.isOne&#x26;&#x26;t.
-splice(E,1)}var s=this;this.watchItem=e,this.container=t,i?i===+i?this.offsets={top:i,bottom:i}:this.offsets={top:i.top||u.top,bottom
-:i.bottom||u.bottom}:this.offsets=u,this.callbacks={};for(var d=0,f=w.length;d&#x3c;f;d++)s.callbacks[w[d]]=[];this.locked=!1;var
- m,v,b,I,E,T;this.triggerCallbacks=function(t){switch(this.isInViewport&#x26;&#x26;!m&#x26;&#x26;o(this.callbacks[r],t),this.isFullyInViewport
-&#x26;&#x26;!v&#x26;&#x26;o(this.callbacks[h],t),this.isAboveViewport!==b&#x26;&#x26;this.isBelowViewport!==I&#x26;&#x26;(o(this
-.callbacks[n],t),v||this.isFullyInViewport||(o(this.callbacks[h],t),o(this.callbacks[a],t)),m||this.isInViewport||(o(this.callbacks
-[r],t),o(this.callbacks[c],t))),!this.isFullyInViewport&#x26;&#x26;v&#x26;&#x26;o(this.callbacks[a],t),!this.isInViewport&#x26;&#
-x26;m&#x26;&#x26;o(this.callbacks[c],t),this.isInViewport!==m&#x26;&#x26;o(this.callbacks[n],t),!0){case m!==this.isInViewport:case
- v!==this.isFullyInViewport:case b!==this.isAboveViewport:case I!==this.isBelowViewport:o(this.callbacks[p],t)}m=this.isInViewport
-,v=this.isFullyInViewport,b=this.isAboveViewport,I=this.isBelowViewport},this.recalculateLocation=function(){if(!this.locked){var
- t=this.top,e=this.bottom;if(this.watchItem.nodeName){var i=this.watchItem.style.display;&#x22;none&#x22;===i&#x26;&#x26;(this.watchItem
-.style.display=&#x22;&#x22;);for(var s=0,n=this.container;n.containerWatcher;)s+=n.containerWatcher.top-n.containerWatcher.container
-.viewportTop,n=n.containerWatcher.container;var r=this.watchItem.getBoundingClientRect();this.top=r.top+this.container.viewportTop
--s,this.bottom=r.bottom+this.container.viewportTop-s,&#x22;none&#x22;===i&#x26;&#x26;(this.watchItem.style.display=i)}else this.
-watchItem===+this.watchItem?this.watchItem&#x3e;0?this.top=this.bottom=this.watchItem:this.top=this.bottom=this.container.documentHeight
--this.watchItem:(this.top=this.watchItem.top,this.bottom=this.watchItem.bottom);this.top-=this.offsets.top,this.bottom+=this.offsets
-.bottom,this.height=this.bottom-this.top,void 0===t&#x26;&#x26;void 0===e||this.top===t&#x26;&#x26;this.bottom===e||o(this.callbacks
-[l],null)}},this.recalculateLocation(),this.update(),m=this.isInViewport,v=this.isFullyInViewport,b=this.isAboveViewport,I=this.
-isBelowViewport}var s=i(1),n=s.VISIBILITYCHANGE,r=s.ENTERVIEWPORT,h=s.FULLYENTERVIEWPORT,c=s.EXITVIEWPORT,a=s.PARTIALLYEXITVIEWPORT
-,l=s.LOCATIONCHANGE,p=s.STATECHANGE,w=s.eventTypes,u=s.defaultOffsets;o.prototype={on:function(t,e,i){switch(!0){case t===n&#x26
-;&#x26;!this.isInViewport&#x26;&#x26;this.isAboveViewport:case t===r&#x26;&#x26;this.isInViewport:case t===h&#x26;&#x26;this.isFullyInViewport
-:case t===c&#x26;&#x26;this.isAboveViewport&#x26;&#x26;!this.isInViewport:case t===a&#x26;&#x26;this.isInViewport&#x26;&#x26;this
-.isAboveViewport:if(e.call(this,this.container.latestEvent,this),i)return}if(!this.callbacks[t])throw new Error(&#x22;Tried to add
- a scroll monitor listener of type &#x22;+t+&#x22;. Your options are: &#x22;+w.join(&#x22;, &#x22;));this.callbacks[t].push({callback
-:e,isOne:i||!1})},off:function(t,e){if(!this.callbacks[t])throw new Error(&#x22;Tried to remove a scroll monitor listener of type
- &#x22;+t+&#x22;. Your options are: &#x22;+w.join(&#x22;, &#x22;));for(var i,o=0;i=this.callbacks[t][o];o++)if(i.callback===e){this
-.callbacks[t].splice(o,1);break}},one:function(t,e){this.<span class="apidocCodeKeywordSpan">on</span>(t,e,!0)},recalculateSize:
-function(){this.height=this.watchItem.offsetHeight+this.offsets.top+this.offsets.bottom,this.bottom=this.top+this.height},update
-:function(){this.isAboveViewport=this.top&#x3c;this.container.viewportTop,this.isBelowViewport=this.bottom&#x3e;this.container.viewportBottom
-,this.isInViewport=this.top&#x3c;this.container.viewportBottom&#x26;&#x26;this.bottom&#x3e;this.container.viewportTop,this.isFullyInViewport
-=this.top&#x3e;=this.container.viewportTop&#x26;&#x26;this.bottom&#x3c;=this.container.viewportBottom||this.isAboveViewport&#x26
-;&#x26;this.isBelowViewport},destroy:function(){var t=this.container.watchers.indexOf(this),e=this;this.container.watchers.splice
-(t,1);for(var i=0,o=w.length;i&#x3c;o;i++)e.callbacks[w[i]].length=0},lock:function(){this.locked=!0},unlock:function(){this.locked
-=!1}};for(var d=function(t){return function(e,i){this.on.call(this,t,e,i)}},f=0,m=w.length;f&#x3c;m;f++){var v=w[f];o.prototype[
-v]=d(v)}t.exports=o}])});
-//# sourceMappingURL=scrollMonitor.js.map
+				}
+			}
+		} else {
+			throw new Error(&#x27;Tried to remove a scroll monitor listener of type &#x27;+event+&#x27;. Your options are: &#x27;+eventTypes
+.join(&#x27;, &#x27;));
+		}
+	},
+	one: function( event, callback ) {
+		this.<span class="apidocCodeKeywordSpan">on</span>( event, callback, true);
+	},
+	recalculateSize: function() {
+		this.height = this.watchItem.offsetHeight + this.offsets.top + this.offsets.bottom;
+		this.bottom = this.top + this.height;
+	},
+	update: function() {
+		this.isAboveViewport = this.top &#x3c; this.container.viewportTop;
 ...</pre></li>
     </ul>
 
