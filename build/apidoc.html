@@ -49,6 +49,8 @@
 <h1>api documentation for
     <a
 
+        href="https://github.com/stutrek/scrollMonitor#readme"
+
     >scrollmonitor (v1.2.3)</a>
 </h1>
 <h4>A simple and fast API to monitor DOM elements as you scroll</h4>
@@ -133,6 +135,12 @@
 
         <li>
 
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">scrollmonitor.</span>index</span>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">scrollmonitor.</span>item</span>
 
         </li>
@@ -152,6 +160,91 @@
         <li>
 
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">scrollmonitor.</span>watchers</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.scrollmonitor.index">module scrollmonitor.index</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.scrollmonitor.index.DOMListener">
+            function <span class="apidocSignatureSpan">scrollmonitor.index.</span>DOMListener
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.scrollmonitor.index.recalculateLocations">
+            function <span class="apidocSignatureSpan">scrollmonitor.index.</span>recalculateLocations
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.scrollmonitor.index.update">
+            function <span class="apidocSignatureSpan">scrollmonitor.index.</span>update
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">scrollmonitor.index.</span>contentHeight</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">scrollmonitor.index.</span>documentHeight</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">scrollmonitor.index.</span>viewportBottom</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">scrollmonitor.index.</span>viewportHeight</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">scrollmonitor.index.</span>viewportTop</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">scrollmonitor.index.</span>eventTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">scrollmonitor.index.</span>item</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">scrollmonitor.index.</span>latestEvent</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">scrollmonitor.index.</span>watchers</span>
 
         </li>
 
@@ -533,6 +626,114 @@
     </ul>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.scrollmonitor.index" id="apidoc.module.scrollmonitor.index">module scrollmonitor.index</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.scrollmonitor.index.DOMListener" id="apidoc.element.scrollmonitor.index.DOMListener">
+        function <span class="apidocSignatureSpan">scrollmonitor.index.</span>DOMListener
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">DOMListener = function () {
+			ScrollMonitorContainer.prototype.DOMListener.apply(self, arguments);
+		}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.scrollmonitor.index.recalculateLocations" id="apidoc.element.scrollmonitor.index.recalculateLocations">
+        function <span class="apidocSignatureSpan">scrollmonitor.index.</span>recalculateLocations
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">recalculateLocations = function () {
+			this.documentHeight = 0;
+			this.update();
+		}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+## scrollMonitor Module
+
+### Methods
+* `scrollMonitor.createContainer( containerEl )` - returns a new ScrollMonitorContainer that can be used just like the scrollMonitor
+ module.
+* `scrollMonitor.create( watchItem, offsets )` - Returns a new watcher. `watchItem` is a DOM element, jQuery object, NodeList, CSS
+ selector, object with .top and .bottom, or a number.
+* `scrollMonitor.update()` - update and trigger all watchers.
+* `scrollMonitor.<span class="apidocCodeKeywordSpan">recalculateLocations</span>()` - recalculate the location of all unlocked watchers
+ and trigger if needed.
+
+### Properties
+* `scrollMonitor.viewportTop` - distance from the top of the document to the top of the viewport.
+* `scrollMonitor.viewportBottom` - distance from the top of the document to the bottom of the viewport.
+* `scrollMonitor.viewportHeight` - height of the viewport.
+* `scrollMonitor.documentHeight` - height of the document.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.scrollmonitor.index.update" id="apidoc.element.scrollmonitor.index.update">
+        function <span class="apidocSignatureSpan">scrollmonitor.index.</span>update
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">update = function () {
+			calculateViewport();
+			updateAndTriggerWatchers();
+		}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ ```
+
+## scrollMonitor Module
+
+### Methods
+* `scrollMonitor.createContainer( containerEl )` - returns a new ScrollMonitorContainer that can be used just like the scrollMonitor
+ module.
+* `scrollMonitor.create( watchItem, offsets )` - Returns a new watcher. `watchItem` is a DOM element, jQuery object, NodeList, CSS
+ selector, object with .top and .bottom, or a number.
+* `scrollMonitor.<span class="apidocCodeKeywordSpan">update</span>()` - update and trigger all watchers.
+* `scrollMonitor.recalculateLocations()` - recalculate the location of all unlocked watchers and trigger if needed.
+
+### Properties
+* `scrollMonitor.viewportTop` - distance from the top of the document to the top of the viewport.
+* `scrollMonitor.viewportBottom` - distance from the top of the document to the bottom of the viewport.
+* `scrollMonitor.viewportHeight` - height of the viewport.
+* `scrollMonitor.documentHeight` - height of the document.
+...</pre></li>
+    </ul>
 
 
 
