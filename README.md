@@ -1,6 +1,6 @@
 # npmdoc-scrollmonitor
 
-#### api documentation for  scrollmonitor (v1.2.3)  [![npm package](https://img.shields.io/npm/v/npmdoc-scrollmonitor.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-scrollmonitor) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-scrollmonitor.svg)](https://travis-ci.org/npmdoc/node-npmdoc-scrollmonitor)
+#### api documentation for  [scrollmonitor (v1.2.3)](https://github.com/stutrek/scrollMonitor#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-scrollmonitor.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-scrollmonitor) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-scrollmonitor.svg)](https://travis-ci.org/npmdoc/node-npmdoc-scrollmonitor)
 
 #### A simple and fast API to monitor DOM elements as you scroll
 
@@ -21,10 +21,12 @@
 ```json
 
 {
-    "name": "scrollmonitor",
-    "version": "1.2.3",
-    "author": "Stu Kabakoff <stukabakoff@gmail.com>",
-    "description": "A simple and fast API to monitor DOM elements as you scroll",
+    "author": {
+        "name": "Stu Kabakoff"
+    },
+    "bugs": {
+        "url": "https://github.com/stutrek/scrollMonitor/issues"
+    },
     "contributors": [
         {
             "name": "Stu Kabakoff"
@@ -36,21 +38,8 @@
             "name": "Roman Kalyakin"
         }
     ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/stutrek/scrollMonitor.git"
-    },
-    "keywords": [
-        "scroll",
-        "dom"
-    ],
-    "scripts": {
-        "test": "webpack; testem ci",
-        "start": "webpack; testem"
-    },
-    "license": "MIT",
-    "main": "./scrollMonitor.js",
     "dependencies": {},
+    "description": "A simple and fast API to monitor DOM elements as you scroll",
     "devDependencies": {
         "babel-core": "^6.2.1",
         "babel-loader": "^6.2.0",
@@ -63,9 +52,39 @@
         "testem": "github:stutrek/testem",
         "webpack": "^1.13.1"
     },
+    "directories": {},
+    "dist": {
+        "shasum": "87bf912ca28da64796f529e8129fa4a9b106fb74",
+        "tarball": "https://registry.npmjs.org/scrollmonitor/-/scrollmonitor-1.2.3.tgz"
+    },
+    "gitHead": "46993cd5eb48fc4bafa1d20d77c958dd09d11d35",
+    "homepage": "https://github.com/stutrek/scrollMonitor#readme",
+    "keywords": [
+        "scroll",
+        "dom"
+    ],
+    "license": "MIT",
+    "main": "./scrollMonitor.js",
+    "maintainers": [
+        {
+            "name": "sakabako"
+        }
+    ],
+    "name": "scrollmonitor",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/stutrek/scrollMonitor.git"
+    },
+    "scripts": {
+        "start": "webpack; testem",
+        "test": "webpack; testem ci"
+    },
     "spm": {
         "main": "scrollMonitor.js"
-    }
+    },
+    "version": "1.2.3",
+    "bin": {}
 }
 ```
 
